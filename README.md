@@ -20,7 +20,7 @@ The **Raspberry Pi Traffic Analyzer** is a network traffic monitoring tool desig
 
 ### Setup
 
-1. **Update Raspberry Pi OS**:
+1. **Update The OS**:
     ```bash
     sudo apt update && sudo apt upgrade -y
     ```
