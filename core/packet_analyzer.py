@@ -1,15 +1,11 @@
-from scapy.all import IP, TCP, UDP, ICMP
+from scapy.all import *
 
 class PacketAnalyzer:
-    @staticmethod
-    def analyze(packet):
-        if IP in packet:
-            protocol = "TCP" if TCP in packet else "UDP" if UDP in packet else "ICMP" if ICMP in packet else "Other"
-            return {
-                "time": packet.time,
-                "src_ip": packet[IP].src,
-                "dst_ip": packet[IP].dst,
-                "protocol": protocol,
-                "length": len(packet)
-            }
-        return None
+    def __init__(self):
+        self.captured_packets = []
+
+    def analyze_packet(self, packet):
+        """Analyze and store a packet."""
+        packet_summary = packet.summary()
+        self.captured_packets.append(packet_summary)
+        return packet_summary
