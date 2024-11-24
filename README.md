@@ -9,7 +9,7 @@ The **Raspberry Pi Traffic Analyzer** is a network traffic monitoring tool desig
 - **Packet Sniffing**: Capture packets from various network interfaces.
 - **Traffic Monitoring**: Real-time visualization of packet rate and data throughput.
 - **User Interface**: A graphical interface built with PyQt6 for easy access to network data.
-- **Cross-Platform Support**: Works on Raspberry Pi OS (Linux) and other compatible systems.
+- **Cross-Platform Support**: Works on Kali Linux and other compatible systems like windows (if npcap is cofigured).
 
 ## Installation
 
